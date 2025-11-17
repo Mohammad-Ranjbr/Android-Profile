@@ -29,6 +29,12 @@ public class EditProfileActivity extends AppCompatActivity {
             setResult(Activity.RESULT_OK, intent);
             finish();
         });
+
+        Button imageButton = findViewById(R.id.btn_image);
+        imageButton.setOnClickListener(v -> {
+            Intent intent = new Intent(EditProfileActivity.this, ImageActivity.class);
+            startActivity(intent);
+        });
     }
 
 }
