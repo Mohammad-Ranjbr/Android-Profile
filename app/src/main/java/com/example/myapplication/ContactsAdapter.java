@@ -4,15 +4,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.ContactViewHolder> {
 
-    private String[] contacts = new String[20];
+    private final String[] contacts = new String[20];
 
-    public ContactsAdapter(){
+    public ContactsAdapter() {
         contacts[0] = "Ruthann Trustrie";
         contacts[1] = "Peadar Dawtrey";
         contacts[2] = "Felipe Bradtke";
@@ -63,9 +64,12 @@ public class ContactsAdapter extends RecyclerView.Adapter<ContactsAdapter.Contac
             fullNameTv = itemView.findViewById(R.id.tv_contact_fullname);
         }
 
-        public void bindContact(String fullName){
+        public void bindContact(String fullName) {
             fullNameTv.setText(fullName);
             firstCharacterTv.setText(fullName.substring(0, 1));
+            itemView.setOnClickListener(v -> {
+                Toast.makeText(v.getContext(), fullName, Toast.LENGTH_SHORT).show();
+            });
         }
 
     }
