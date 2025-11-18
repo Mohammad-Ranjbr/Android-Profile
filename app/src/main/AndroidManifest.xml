@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.myapplication">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -14,12 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".Contacts"
-            android:exported="false" />
-        <activity
             android:name=".ContactsActivity"
-            android:exported="false"
-            android:theme="@style/Theme.MyApplication" />
+            android:exported="false" />
         <activity
             android:name=".ToolsActivity"
             android:exported="false" />

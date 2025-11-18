@@ -21,5 +21,11 @@ public class ToolsActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        Button contactsButton = findViewById(R.id.btn_tools_contacts);
+        contactsButton.setOnClickListener(v -> {
+            Intent intent = new Intent(ToolsActivity.this, ContactsActivity.class);
+            startActivity(intent);
+        });
+
     }
 }
