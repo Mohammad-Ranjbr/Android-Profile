@@ -12,6 +12,8 @@
     <string name="gilanRasht">گیلان، رشت</string>
     <string name="tehran">تهران، تهران</string>
     <string name="alborzKaraj">البرز، کرج</string>
-    <string name="saveInformation">ذخیره اطلاعات</string>
+    <string name="tools">ابزارها</string>
+    <string name="picasso_image">عکس</string>
     <string name="editProfile_hint">نام و نام خانوادگی را وارد کنید...</string>
+    <string name="contacts">مخاطبین</string>
 </resources>

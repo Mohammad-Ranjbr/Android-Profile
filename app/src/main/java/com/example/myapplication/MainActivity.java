@@ -23,9 +23,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button saveInformationButton = findViewById(R.id.btn_main_saveInformation);
-        saveInformationButton.setOnClickListener(v ->
-                Toast.makeText(MainActivity.this, "User clicked on save information button", Toast.LENGTH_SHORT).show());
+        Button saveInformationButton = findViewById(R.id.btn_main_tools);
+        saveInformationButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ToolsActivity.class);
+            startActivity(intent);
+        });
 
         CheckBox androidSkillCheckBox = findViewById(R.id.checkBox_main_android);
         androidSkillCheckBox.setOnCheckedChangeListener((buttonView, isChecked) -> {
@@ -71,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
             //startActivity(intent);
             TextView textView = findViewById(R.id.tv_main_fullName);
             intent.putExtra(EXTRA_KEY_FULLNAME, textView.getText());
-             startActivityForResult(intent, 1001);
+            startActivityForResult(intent, 1001);
         });
 
         Button viewWebsiteButton = findViewById(R.id.btn_main_viewWebSite);

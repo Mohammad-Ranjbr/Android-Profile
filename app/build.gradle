@@ -28,6 +28,9 @@ android {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -38,4 +41,7 @@ dependencies {
     implementation (libs.androidx.activity)
     implementation ('com.squareup.picasso:picasso:2.8')
     implementation project(':progress')
+    implementation ('androidx.recyclerview:recyclerview:1.4.0')
+    implementation libs.androidx.navigation.fragment
+    implementation libs.androidx.navigation.ui
 }

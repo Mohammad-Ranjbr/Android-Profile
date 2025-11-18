@@ -27,14 +27,4 @@
         android:textColor="@color/white"
         app:backgroundTint="@null" />
 
-    <Button
-        android:id="@+id/btn_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/background_button_primary"
-        android:text="Image"
-        android:textColor="@color/white"
-        app:backgroundTint="@null" />
-
 </LinearLayout>
